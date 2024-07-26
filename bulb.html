@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+
+        }
+
+        img {
+            width: 40%;
+        }
+
+        #main {
+            background-color: rgb(249, 241, 17);
+            width: 420px;
+            height: 420px;
+            border-radius: 70%;
+            position: relative;
+            bottom: 120px; 
+            left: 550px;
+            opacity: 0.5;           
+            box-shadow: 0px 0px 30px 30px yellow;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main"></div>
+    <div id="main1"></div>
+
+    <img src="./bl-removebg-preview.png" alt="">
+    <button onclick="on()"
+        style="padding: 20px;background-color: blueviolet; border: none; border-radius: 10px; font-size: larger; color: white; cursor: pointer; ">ON</button> 
+    <button onclick="Of()"
+        style="padding: 20px;background-color: blueviolet; border: none; border-radius: 10px; font-size: larger; color: white; cursor: pointer; margin-left: 20px; ">OF</button>
+
+    <script>
+        const on = () => {
+            add = document.getElementById('main')
+            add.setAttribute("style", "backgroundColor: yellow; box-shadow: 0px 0px 30px 30px yellow;")
+        }
+        const Of = () => {
+            data = document.getElementById('main')
+            data.setAttribute("style", "box-shadow: none;background-color: white")
+        }
+    </script>
+
+</body>
+
+</html>
